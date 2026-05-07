@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VibeCheck | Emotional Intelligence for Content</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@300;800&family=Instrument+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #fffbf5;
+            --primary: #f87171;
+        }
+        body {
+            background-color: var(--bg);
+            color: #450a0a;
+            font-family: 'Instrument Sans', sans-serif;
+            overflow-x: hidden;
+        }
+        .heading {
+            font-family: 'Bricolage Grotesque', sans-serif;
+        }
+        .bubble {
+            border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+            animation: morph 8s ease-in-out infinite;
+        }
+        @keyframes morph {
+            0% { border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%; }
+            33% { border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%; }
+            66% { border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%; }
+            100% { border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%; }
+        }
+        .blob-bg {
+            background: linear-gradient(135deg, #fecaca 0%, #ddd6fe 100%);
+            filter: blur(80px);
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <nav class="fixed w-full z-50 px-10 py-8 flex justify-between items-center">
+        <div class="text-2xl font-black heading flex items-center gap-1">
+            <span class="text-red-400">Vibe</span>Check
+        </div>
+        <div class="hidden md:flex space-x-12 text-sm font-bold">
+            <a href="#" class="hover:text-red-500 transition-colors">Features</a>
+            <a href="#" class="hover:text-red-500 transition-colors">Pricing</a>
+            <a href="#" class="hover:text-red-500 transition-colors">Docs</a>
+        </div>
+        <button class="px-8 py-3 bg-red-400 text-white rounded-2xl font-bold shadow-lg shadow-red-200 hover:bg-red-500 transition-all">Get Started</button>
+    </nav>
+
+    <main>
+        <section class="min-h-screen flex flex-col items-center justify-center pt-20 relative">
+            <div class="absolute top-1/4 left-1/4 w-96 h-96 blob-bg -z-10 opacity-60 animate-pulse"></div>
+            <div class="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] blob-bg -z-10 opacity-40" style="background: #bae6fd"></div>
+
+            <div class="container mx-auto px-6 text-center">
+                <div class="inline-block px-4 py-2 bg-red-100 text-red-600 rounded-full text-xs font-black uppercase tracking-widest mb-10">Emotional Intelligence API</div>
+                <h1 class="text-6xl md:text-9xl font-extrabold heading leading-tight mb-12 tracking-tight">
+                    Read between <br/> 
+                    <span class="bg-gradient-to-r from-red-400 to-violet-500 bg-clip-text text-fill-transparent text-transparent">the vibes.</span>
+                </h1>
+                <p class="max-w-2xl mx-auto text-xl text-stone-500 mb-16 leading-relaxed">
+                    VibeCheck analyzes the hidden emotional layers in your text, feedback, and content. Don't just read words—understand feelings.
+                </p>
+
+                <div class="relative max-w-3xl mx-auto">
+                    <div class="bg-white p-6 rounded-[2.5rem] shadow-2xl flex flex-col md:flex-row gap-4 items-center border-8 border-red-50">
+                        <input type="text" placeholder="Paste your text here..." class="flex-1 px-8 py-4 rounded-2xl bg-stone-50 focus:outline-none font-medium">
+                        <button class="w-full md:w-auto px-10 py-4 bg-stone-900 text-white rounded-2xl font-bold hover:bg-red-500 transition-all uppercase tracking-widest text-xs">Analyze Vibe</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-40 container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-10 rounded-[3rem] shadow-xl hover:-translate-y-4 transition-all border border-stone-50">
+                    <div class="w-16 h-16 bg-red-100 rounded-3xl flex items-center justify-center mb-8 text-3xl">😊</div>
+                    <h3 class="text-xl font-bold mb-4">Positivity Score</h3>
+                    <p class="text-stone-400">Instantly gauge the level of enthusiasm and optimism in any conversation.</p>
+                </div>
+                <div class="bg-white p-10 rounded-[3rem] shadow-xl hover:-translate-y-4 transition-all border border-stone-50">
+                    <div class="w-16 h-16 bg-violet-100 rounded-3xl flex items-center justify-center mb-8 text-3xl">🎭</div>
+                    <h3 class="text-xl font-bold mb-4">Sarcasm Detection</h3>
+                    <p class="text-stone-400">Our AI identifies nuance and irony that traditional tools miss completely.</p>
+                </div>
+                <div class="bg-white p-10 rounded-[3rem] shadow-xl hover:-translate-y-4 transition-all border border-stone-50">
+                    <div class="w-16 h-16 bg-blue-100 rounded-3xl flex items-center justify-center mb-8 text-3xl">🔥</div>
+                    <h3 class="text-xl font-bold mb-4">Intensity Mapping</h3>
+                    <p class="text-stone-400">Visualize the emotional peaks and valleys throughout long-form content.</p>
+                </div>
+                <div class="bg-white p-10 rounded-[3rem] shadow-xl hover:-translate-y-4 transition-all border border-stone-50">
+                    <div class="w-16 h-16 bg-emerald-100 rounded-3xl flex items-center justify-center mb-8 text-3xl">📈</div>
+                    <h3 class="text-xl font-bold mb-4">Sentiment Over Time</h3>
+                    <p class="text-stone-400">Track how customer mood shifts over weeks or months of interaction.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-20 bg-stone-900 text-stone-100 text-center rounded-t-[5rem]">
+        <h3 class="text-4xl heading font-bold mb-10">Stop guessing. Start feeling.</h3>
+        <p class="text-stone-500 font-bold uppercase tracking-[0.3em] text-[10px]">VibeCheck Labs © 2026</p>
+    </footer>
+</body>
+</html>
