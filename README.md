@@ -1,7 +1,7 @@
 ﻿# 🎭 VibeCheck — Sentiment Analysis Tool
 
 [![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Visit_Site-F87171?style=for-the-badge)](https://sentiment-tool.netlify.app/)
-[![GitHub](https://img.shields.io/badge/Source_Code-GitHub-black?style=for-the-badge&logo=github)](https://github.com/kiranyasmeen/sentiment-tool)
+[![GitHub](https://img.shields.io/badge/Source_Code-GitHub-black?style=for-the-badge&logo=github)](https://github.com/majidali/sentiment-tool)
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:f87171,100:a78bfa&height=150&section=header&text=VibeCheck&fontSize=50&animation=fadeIn" width="100%" />
@@ -30,13 +30,13 @@ An emotional intelligence API that analyzes hidden nuances and sarcasm in textua
 
 ## 🚀 Getting Started
 `ash
-git clone https://github.com/kiranyasmeen/sentiment-tool.git
+git clone https://github.com/majidali/sentiment-tool.git
 open index.html
 `
 
 ---
 
-<p align="center">Built with ❤️ by <strong>Kiran Yasmeen</strong></p>
+<p align="center">Built with ❤️ by <strong>Majid Ali</strong></p>
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:f87171,100:a78bfa&height=80&section=footer" width="100%" />
 </p>
